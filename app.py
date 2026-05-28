@@ -114,7 +114,7 @@ st.subheader("記録一覧")
 
 if st.session_state.records:
     df = pd.DataFrame(st.session_state.records)
-    st.dataframe(df, use_container_width=True)
+    st.dataframe(df, width="stretch")
 
     # --- 9. CSVダウンロード ---
     st.subheader("CSVダウンロード")
